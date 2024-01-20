@@ -83,6 +83,9 @@ export function signUp(
   }
 }
 
+//Frontend (login Page) => Backend Call 
+// Frontend (login page)=> Services(operations) => apiConnector =>Backend Call
+
 export function login(email, password, navigate) {
   return async (dispatch) => {
     const toastId = toast.loading("Loading...")
