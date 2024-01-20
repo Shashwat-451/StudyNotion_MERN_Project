@@ -83,8 +83,14 @@ export function signUp(
   }
 }
 
-//Frontend (login Page) => Backend Call 
+  //Query:
+ //Frontend (login Page) => Backend Call 
 // Frontend (login page)=> Services(operations) => apiConnector =>Backend Call
+
+ //Response:
+// Backend Page => Frontend (set User)
+//Api Connector (returns axios instance) => Services (receives data, set user, set token)
+
 
 export function login(email, password, navigate) {
   return async (dispatch) => {
